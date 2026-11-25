@@ -26,6 +26,9 @@ python arm_pd_control.py
 
 Kp = 200, Kd = 20 was unstable: the arm oscillated and did not settle.
 
+![Link 1 angle](Link1_comparison.png)
+![Link 2 angle](Link2_comparison.png)
+
 ## Observations
 - With a constant target, the arm settles below it, because holding the arm up against gravity needs a nonzero error. The steady-state error roughly halves each time Kp doubles (11.01, 5.59, 2.81 deg for Link 1), consistent with error = gravity torque / Kp.
 - Overshoot was lowest for Kp = 100, Kd = 10. Raising Kp to 200 while keeping Kd = 10 gave back more overshoot, because damping did not increase along with stiffness.
