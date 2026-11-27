@@ -7,6 +7,7 @@
                 <body name="link2" pos="0.5 0 0">
                     <joint name="pivot2" type="hinge" axis="0 1 0"/>
                     <geom type="capsule" fromto="0 0 0 0.5 0 0" size ="0.02" mass="1"/>
+                    <site name="tip" pos="0.5 0 0" size="0.02"/>
                 </body>
             </body>
         </worldbody>
